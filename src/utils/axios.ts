@@ -6,7 +6,9 @@ const cache = setupCache({
 })
 
 const isProd = process.env.NODE_ENV === 'production'
-const url = isProd ? 'https://izivagas.vercel.app/' : 'http://localhost:3000/'
+const url = isProd
+  ? 'https://izivagas-condominio.vercel.app/'
+  : 'http://localhost:3000/'
 
 const clientApi = axios.create({
   baseURL: url,
